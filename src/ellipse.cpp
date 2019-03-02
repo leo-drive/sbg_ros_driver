@@ -241,100 +241,100 @@ void Ellipse::load_param(){
 
 void Ellipse::publish(){
   sbgEComHandle(&m_comHandle);
-  if(m_new_sbgStatus && m_log_status != 0){
-    m_new_sbgStatus = false;
-    m_sbgStatus_pub.publish(m_sbgStatus_msg);
-  }
-
-  if(m_new_sbgUtcTime && m_log_utc_time != 0){
-    m_new_sbgUtcTime = false;
-    m_sbgUtcTime_pub.publish(m_sbgUtcTime_msg);
-  }
-
-  if(m_new_sbgImuData && m_log_imu_data != 0){
-    m_new_sbgImuData = false;
-    m_sbgImuData_pub.publish(m_sbgImuData_msg);
-  }
-
-  if(m_new_sbgEkfEuler && m_log_ekf_euler != 0){
-    m_new_sbgEkfEuler = false;
-    m_sbgEkfEuler_pub.publish(m_sbgEkfEuler_msg);
-  }
-
-  if(m_new_sbgEkfQuat && m_log_ekf_quat != 0){
-    m_new_sbgEkfQuat = false;
-    m_sbgEkfQuat_pub.publish(m_sbgEkfQuat_msg);
-  }
-
-  if(m_new_sbgEkfNav && m_log_ekf_nav != 0){
-    m_new_sbgEkfNav = false;
-    m_sbgEkfNav_pub.publish(m_sbgEkfNav_msg);
-  }
-
-  if(m_new_sbgShipMotion && m_log_ship_motion != 0){
-    m_new_sbgShipMotion = false;
-    m_sbgShipMotion_pub.publish(m_sbgShipMotion_msg);
-  }
-
-  if(m_new_sbgMag && m_log_mag != 0){
-    m_new_sbgMag = false;
-    m_sbgMag_pub.publish(m_sbgMag_msg);
-  }
-
-  if(m_new_sbgMagCalib && m_log_mag_calib != 0){
-    m_new_sbgMagCalib = false;
-    m_sbgMagCalib_pub.publish(m_sbgMagCalib_msg);
-  }
-
-  if(m_new_sbgGpsVel && m_log_gps1_vel != 0){
-    m_new_sbgGpsVel = false;
-    m_sbgGpsVel_pub.publish(m_sbgGpsVel_msg);
-  }
-
-  if(m_new_sbgGpsPos && m_log_gps1_pos != 0){
-    m_new_sbgGpsPos = false;
-    m_sbgGpsPos_pub.publish(m_sbgGpsPos_msg);
-  }
-
-  if(m_new_sbgGpsHdt && m_log_gps1_hdt != 0){
-    m_new_sbgGpsHdt = false;
-    m_sbgGpsHdt_pub.publish(m_sbgGpsHdt_msg);
-  }
-
-  if(m_new_sbgGpsRaw && m_log_gps1_raw != 0){
-    m_new_sbgGpsRaw = false;
-    m_sbgGpsRaw_pub.publish(m_sbgGpsRaw_msg);
-  }
-
-  if(m_new_sbgOdoVel && m_log_odo_vel != 0){
-    m_new_sbgOdoVel = false;
-    m_sbgOdoVel_pub.publish(m_sbgOdoVel_msg);
-  }
-
-  if(m_new_sbgEventA && m_log_event_a != 0){
-    m_new_sbgEventA = false;
-    m_sbgEventA_pub.publish(m_sbgEventA_msg);
-  }
-
-  if(m_new_sbgEventB && m_log_event_b != 0){
-    m_new_sbgEventB = false;
-    m_sbgEventB_pub.publish(m_sbgEventB_msg);
-  }
-
-  if(m_new_sbgEventC && m_log_event_c != 0){
-    m_new_sbgEventC = false;
-    m_sbgEventC_pub.publish(m_sbgEventC_msg);
-  }
-
-  if(m_new_sbgEventD && m_log_event_d != 0){
-    m_new_sbgEventD = false;
-    m_sbgEventD_pub.publish(m_sbgEventD_msg);
-  }
-
-  if(m_new_sbgPressure && m_log_pressure != 0){
-    m_new_sbgPressure = false;
-    m_sbgPressure_pub.publish(m_sbgPressure_msg);
-  }
+//  if(m_new_sbgStatus && m_log_status != 0){
+//    m_new_sbgStatus = false;
+//    m_sbgStatus_pub.publish(m_sbgStatus_msg);
+//  }
+//
+//  if(m_new_sbgUtcTime && m_log_utc_time != 0){
+//    m_new_sbgUtcTime = false;
+//    m_sbgUtcTime_pub.publish(m_sbgUtcTime_msg);
+//  }
+//
+//  if(m_new_sbgImuData && m_log_imu_data != 0){
+//    m_new_sbgImuData = false;
+//    m_sbgImuData_pub.publish(m_sbgImuData_msg);
+//  }
+//
+//  if(m_new_sbgEkfEuler && m_log_ekf_euler != 0){
+//    m_new_sbgEkfEuler = false;
+//    m_sbgEkfEuler_pub.publish(m_sbgEkfEuler_msg);
+//  }
+//
+//  if(m_new_sbgEkfQuat && m_log_ekf_quat != 0){
+//    m_new_sbgEkfQuat = false;
+//    m_sbgEkfQuat_pub.publish(m_sbgEkfQuat_msg);
+//  }
+//
+//  if(m_new_sbgEkfNav && m_log_ekf_nav != 0){
+//    m_new_sbgEkfNav = false;
+//    m_sbgEkfNav_pub.publish(m_sbgEkfNav_msg);
+//  }
+//
+//  if(m_new_sbgShipMotion && m_log_ship_motion != 0){
+//    m_new_sbgShipMotion = false;
+//    m_sbgShipMotion_pub.publish(m_sbgShipMotion_msg);
+//  }
+//
+//  if(m_new_sbgMag && m_log_mag != 0){
+//    m_new_sbgMag = false;
+//    m_sbgMag_pub.publish(m_sbgMag_msg);
+//  }
+//
+//  if(m_new_sbgMagCalib && m_log_mag_calib != 0){
+//    m_new_sbgMagCalib = false;
+//    m_sbgMagCalib_pub.publish(m_sbgMagCalib_msg);
+//  }
+//
+//  if(m_new_sbgGpsVel && m_log_gps1_vel != 0){
+//    m_new_sbgGpsVel = false;
+//    m_sbgGpsVel_pub.publish(m_sbgGpsVel_msg);
+//  }
+//
+//  if(m_new_sbgGpsPos && m_log_gps1_pos != 0){
+//    m_new_sbgGpsPos = false;
+//    m_sbgGpsPos_pub.publish(m_sbgGpsPos_msg);
+//  }
+//
+//  if(m_new_sbgGpsHdt && m_log_gps1_hdt != 0){
+//    m_new_sbgGpsHdt = false;
+//    m_sbgGpsHdt_pub.publish(m_sbgGpsHdt_msg);
+//  }
+//
+//  if(m_new_sbgGpsRaw && m_log_gps1_raw != 0){
+//    m_new_sbgGpsRaw = false;
+//    m_sbgGpsRaw_pub.publish(m_sbgGpsRaw_msg);
+//  }
+//
+//  if(m_new_sbgOdoVel && m_log_odo_vel != 0){
+//    m_new_sbgOdoVel = false;
+//    m_sbgOdoVel_pub.publish(m_sbgOdoVel_msg);
+//  }
+//
+//  if(m_new_sbgEventA && m_log_event_a != 0){
+//    m_new_sbgEventA = false;
+//    m_sbgEventA_pub.publish(m_sbgEventA_msg);
+//  }
+//
+//  if(m_new_sbgEventB && m_log_event_b != 0){
+//    m_new_sbgEventB = false;
+//    m_sbgEventB_pub.publish(m_sbgEventB_msg);
+//  }
+//
+//  if(m_new_sbgEventC && m_log_event_c != 0){
+//    m_new_sbgEventC = false;
+//    m_sbgEventC_pub.publish(m_sbgEventC_msg);
+//  }
+//
+//  if(m_new_sbgEventD && m_log_event_d != 0){
+//    m_new_sbgEventD = false;
+//    m_sbgEventD_pub.publish(m_sbgEventD_msg);
+//  }
+//
+//  if(m_new_sbgPressure && m_log_pressure != 0){
+//    m_new_sbgPressure = false;
+//    m_sbgPressure_pub.publish(m_sbgPressure_msg);
+//  }
 }
 
 
@@ -343,96 +343,115 @@ SbgErrorCode onLogReceived(SbgEComHandle *pHandle, SbgEComClass msgClass, SbgECo
   switch (msg){
   case SBG_ECOM_LOG_STATUS:
     read_ecom_log_status(e->m_sbgStatus_msg, pLogData);
+    e->m_sbgStatus_pub.publish(e->m_sbgStatus_msg);
     e->m_new_sbgStatus = true;
     break;
 
   case SBG_ECOM_LOG_UTC_TIME:
     read_ecom_log_utc_time(e->m_sbgUtcTime_msg, pLogData);
+    e->m_sbgUtcTime_pub.publish(e->m_sbgUtcTime_msg);
     e->m_new_sbgUtcTime = true;
     break;
 
   case SBG_ECOM_LOG_IMU_DATA:
     read_ecom_log_imu_data(e->m_sbgImuData_msg, pLogData);
+    e->m_sbgImuData_pub.publish(e->m_sbgImuData_msg);
     e->m_new_sbgImuData = true;
     break;
 
   case SBG_ECOM_LOG_EKF_EULER:
     read_ecom_log_ekf_euler(e->m_sbgEkfEuler_msg, pLogData);
+    e->m_sbgEkfEuler_pub.publish(e->m_sbgEkfEuler_msg);
     e->m_new_sbgEkfEuler = true;
     break;
 
   case SBG_ECOM_LOG_EKF_QUAT:
     read_ecom_log_ekf_quat(e->m_sbgEkfQuat_msg, pLogData);
+    e->m_sbgEkfQuat_pub.publish(e->m_sbgEkfQuat_msg);
     e->m_new_sbgEkfQuat = true;
     break;
 
   case SBG_ECOM_LOG_EKF_NAV:
     read_ecom_log_ekf_nav(e->m_sbgEkfNav_msg, pLogData);
+    e->m_sbgEkfNav_pub.publish(e->m_sbgEkfNav_msg);
     e->m_new_sbgEkfNav = true;
     break;
 
   case SBG_ECOM_LOG_SHIP_MOTION:
     read_ecom_log_ship_motion(e->m_sbgShipMotion_msg, pLogData);
+    e->m_sbgShipMotion_pub.publish(e->m_sbgShipMotion_msg);
     e->m_new_sbgShipMotion = true;
     break;
 
   case SBG_ECOM_LOG_MAG:
     read_ecom_log_mag(e->m_sbgMag_msg, pLogData);
+    e->m_sbgMag_pub.publish(e->m_sbgMag_msg);
     e->m_new_sbgMag = true;
     break;
 
   case SBG_ECOM_LOG_MAG_CALIB:
     read_ecom_log_mag_calib(e->m_sbgMagCalib_msg, pLogData);
+    e->m_sbgMagCalib_pub.publish(e->m_sbgMagCalib_msg);
     e->m_new_sbgMagCalib = true;
     break;
 
   case SBG_ECOM_LOG_GPS1_VEL:
     read_ecom_log_gps_vel(e->m_sbgGpsVel_msg, pLogData);
+    e->m_sbgGpsVel_pub.publish(e->m_sbgGpsVel_msg);
     e->m_new_sbgGpsVel = true;
     break;
 
   case SBG_ECOM_LOG_GPS1_POS:
     read_ecom_log_gps_pos(e->m_sbgGpsPos_msg, pLogData);
+    e->m_sbgGpsPos_pub.publish(e->m_sbgGpsPos_msg);
     e->m_new_sbgGpsPos = true;
     break;
 
   case SBG_ECOM_LOG_GPS1_HDT:
     read_ecom_log_gps_hdt(e->m_sbgGpsHdt_msg, pLogData);
+    e->m_sbgGpsHdt_pub.publish(e->m_sbgGpsHdt_msg);
     e->m_new_sbgGpsHdt = true;
     break;
 
   case SBG_ECOM_LOG_GPS1_RAW:
     read_ecom_log_gps_raw(e->m_sbgGpsRaw_msg, pLogData);
+    e->m_sbgGpsRaw_pub.publish(e->m_sbgGpsRaw_msg);
     e->m_new_sbgGpsRaw = true;
     break;
 
   case SBG_ECOM_LOG_ODO_VEL:
     read_ecom_log_odo_vel(e->m_sbgOdoVel_msg, pLogData);
+    e->m_sbgOdoVel_pub.publish(e->m_sbgOdoVel_msg);
     e->m_new_sbgOdoVel = true;
     break;
 
   case SBG_ECOM_LOG_EVENT_A:
     read_ecom_log_event(e->m_sbgEventA_msg, pLogData);
+    e->m_sbgEventA_pub.publish(e->m_sbgEventA_msg);
     e->m_new_sbgEventA = true;
     break;
 
   case SBG_ECOM_LOG_EVENT_B:
     read_ecom_log_event(e->m_sbgEventB_msg, pLogData);
+    e->m_sbgEventB_pub.publish(e->m_sbgEventB_msg);
     e->m_new_sbgEventB = true;
     break;
 
   case SBG_ECOM_LOG_EVENT_C:
     read_ecom_log_event(e->m_sbgEventC_msg, pLogData);
+    e->m_sbgEventC_pub.publish(e->m_sbgEventC_msg);
     e->m_new_sbgEventC = true;
     break;
 
   case SBG_ECOM_LOG_EVENT_D:
     read_ecom_log_event(e->m_sbgEventD_msg, pLogData);
+    e->m_sbgEventD_pub.publish(e->m_sbgEventD_msg);
     e->m_new_sbgEventD = true;
     break;
 
   case SBG_ECOM_LOG_PRESSURE:
     read_ecom_log_pressure(e->m_sbgPressure_msg, pLogData);
+    e->m_sbgPressure_pub.publish(e->m_sbgPressure_msg);
     e->m_new_sbgPressure = true;
     break;
 

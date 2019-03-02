@@ -94,7 +94,6 @@ class Ellipse
 
     int m_rate_frequency;
 
-  private:
     ros::Publisher m_sbgStatus_pub;
     ros::Publisher m_sbgUtcTime_pub;
     ros::Publisher m_sbgImuData_pub;
@@ -115,6 +114,7 @@ class Ellipse
     ros::Publisher m_sbgEventD_pub;
     ros::Publisher m_sbgPressure_pub;
 
+  private:
     // *************** SBG TOOLS *************** //
     SbgEComHandle       m_comHandle;
     SbgInterface        m_sbgInterface;
